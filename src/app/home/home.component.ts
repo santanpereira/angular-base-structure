@@ -2,15 +2,15 @@
 import { first } from 'rxjs/operators';
 
 import { User } from '../models';
-import { UserService } from '../services';
+import { UserService, StorageService } from '../services';
 
 @Component({templateUrl: 'home.component.html'})
 export class HomeComponent implements OnInit {
     currentUser: User;
     users: User[] = [];
 
-    constructor(private userService: UserService) {
-        this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    constructor(private userService: UserService, private storageService: StorageService) {
+        this.currentUser = this.storageService.getCurrentUser();
     }
 
     ngOnInit() {

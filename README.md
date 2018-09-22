@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Ref 
+
+Authentication ref : http://jasonwatmore.com/post/2018/05/16/angular-6-user-registration-and-login-example-tutorial
+
+Material ref :
+https://material.angular.io/components/toolbar/overview
+
+Navbar ref : 
+https://loiane.com/2017/08/angular-hide-navbar-login-page/

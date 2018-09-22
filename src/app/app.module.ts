@@ -12,7 +12,7 @@ import { routing } from './app.routing';
 import { AlertComponent } from './component';
 import { AuthGuard } from './guards';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
-import { AlertService, AuthenticationService, UserService } from './services';
+import { AlertService, AuthenticationService, UserService, StorageService } from './services';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
@@ -33,6 +33,7 @@ import { RegisterComponent } from './register';
     ],
     providers: [
         AuthGuard,
+        StorageService,
         AlertService,
         AuthenticationService,
         UserService,
