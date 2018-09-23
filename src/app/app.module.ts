@@ -10,7 +10,7 @@ import { fakeBackendProvider } from './_helpers';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 
-import { AlertComponent } from './component';
+import { AlertComponent, HeaderComponent } from './component';
 import { AuthGuard } from './guards';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { AlertService, AuthenticationService, UserService, StorageService } from './services';
@@ -32,6 +32,7 @@ import { AppMaterialModule } from './app-material/app-material.module';
     declarations: [
         AppComponent,
         AlertComponent,
+        HeaderComponent,
         HomeComponent,
         LoginComponent,
         RegisterComponent

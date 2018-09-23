@@ -4,7 +4,7 @@ import { first } from 'rxjs/operators';
 import { User } from '../models';
 import { UserService, StorageService } from '../services';
 
-@Component({templateUrl: 'home.component.html'})
+@Component({ templateUrl: 'home.component.html' })
 export class HomeComponent implements OnInit {
     currentUser: User;
     users: User[] = [];
