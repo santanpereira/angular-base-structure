@@ -1,6 +1,7 @@
 ﻿import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 // used to create fake backend
@@ -16,13 +17,17 @@ import { AlertService, AuthenticationService, UserService, StorageService } from
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
+import { AppMaterialModule } from './app-material/app-material.module';
+
 
 @NgModule({
     imports: [
+        routing,
         BrowserModule,
         ReactiveFormsModule,
         HttpClientModule,
-        routing
+        BrowserAnimationsModule,
+        AppMaterialModule
     ],
     declarations: [
         AppComponent,
